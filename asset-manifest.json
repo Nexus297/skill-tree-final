@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/skill-tree-final/static/css/main.b723e000.css",
+    "main.js": "/skill-tree-final/static/js/main.4049cf80.js",
+    "static/js/453.2314bef0.chunk.js": "/skill-tree-final/static/js/453.2314bef0.chunk.js",
+    "index.html": "/skill-tree-final/index.html",
+    "main.b723e000.css.map": "/skill-tree-final/static/css/main.b723e000.css.map",
+    "main.4049cf80.js.map": "/skill-tree-final/static/js/main.4049cf80.js.map",
+    "453.2314bef0.chunk.js.map": "/skill-tree-final/static/js/453.2314bef0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b723e000.css",
+    "static/js/main.4049cf80.js"
+  ]
+}
