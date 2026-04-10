@@ -23,11 +23,30 @@ const migrateNode = (node) => {
 const DEFAULT_MAPS = [
   {
     id: 'map_1',
-    name: 'Web Dev Mastery',
+    name: 'Modern Web Engineering',
     nodes: [
-      { id: '1', label: 'Web Basics', x: 1900, y: 1800, parentIds: [], status: 'mastered', desc: 'HTML, CSS, Internet architecture' },
-      { id: '2', label: 'JS Fundamentals', x: 2100, y: 1800, parentIds: [], status: 'progress', desc: 'Loops, Variables, Functions' },
-      { id: '3', label: 'React JS', x: 2000, y: 1950, parentIds: ['1', '2'], status: 'progress', desc: 'Requires both Web Basics and JS' },
+      { id: '1', label: 'HTML5 & Semantics', x: 1850, y: 1700, parentIds: [], status: 'mastered', desc: 'Core document structure and accessibility' },
+      { id: '2', label: 'CSS3 Foundations', x: 1850, y: 1850, parentIds: ['1'], status: 'mastered', desc: 'Flexbox, Grid, and responsive design' },
+      { id: '3', label: 'JavaScript ES6+', x: 2150, y: 1700, parentIds: [], status: 'mastered', desc: 'Async/Await, Closures, DOM Manipulation' },
+      { id: '4', label: 'React.js', x: 2000, y: 1850, parentIds: ['3'], status: 'progress', desc: 'Component lifecycle, Hooks, Context API' },
+      { id: '5', label: 'Node.js & Express', x: 2300, y: 1850, parentIds: ['3'], status: 'progress', desc: 'RESTful APIs and server-side JS' },
+      { id: '6', label: 'Tailwind CSS', x: 1850, y: 2000, parentIds: ['2'], status: 'progress', desc: 'Utility-first CSS framework' },
+      { id: '7', label: 'Full Stack Auth', x: 2150, y: 2000, parentIds: ['4', '5'], status: 'progress', desc: 'JWT, Sessions, OAuth integration' },
+      { id: '8', label: 'Next.js App Router', x: 2000, y: 2150, parentIds: ['4', '6', '7'], status: 'progress', desc: 'Server-side rendering and static generation' }
+    ]
+  },
+  {
+    id: 'map_2',
+    name: 'Applied Machine Learning',
+    nodes: [
+      { id: '101', label: 'Python Mastery', x: 2000, y: 1650, parentIds: [], status: 'mastered', desc: 'OOP, decorators, and memory management' },
+      { id: '102', label: 'Linear Algebra', x: 1800, y: 1650, parentIds: [], status: 'mastered', desc: 'Matrices, vectors, and dimensionality' },
+      { id: '103', label: 'Statistics', x: 2200, y: 1650, parentIds: [], status: 'mastered', desc: 'Distributions, Bayes theorem, hypothesis testing' },
+      { id: '104', label: 'Data Preprocessing', x: 2000, y: 1800, parentIds: ['101', '102', '103'], status: 'mastered', desc: 'Pandas, NumPy, and synthetic oversampling' },
+      { id: '105', label: 'Scikit-Learn', x: 2000, y: 1950, parentIds: ['104'], status: 'progress', desc: 'Random Forests, SVMs, and feature interpretability' },
+      { id: '106', label: 'Deep Learning', x: 2000, y: 2100, parentIds: ['105'], status: 'progress', desc: 'Backpropagation and neural network architectures' },
+      { id: '107', label: 'Computer Vision', x: 1850, y: 2250, parentIds: ['106'], status: 'progress', desc: 'CNNs, object detection, and image segmentation' },
+      { id: '108', label: 'NLP', x: 2150, y: 2250, parentIds: ['106'], status: 'progress', desc: 'Transformers, LLMs, and attention mechanisms' }
     ]
   }
 ];
